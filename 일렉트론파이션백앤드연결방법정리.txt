@@ -1,0 +1,12 @@
+일렉토리 패키지 : 프런트와 백앤드가 모두 공유하는 프로젝트.
+일렉토리 깃 주소 : git clone https://gitlab.cjcho.site/development/form/electron_py_backend_form
+visual Studio Code -> electron_py_backend_form 폴더 진행 후 npm run electron:start
+
+Anaconda Prompt을 열고 순서대로 실행
+1)pip install fastapi
+2)where conda ==> where python 에 나온 경로를 main.js에 
+   pythonProcess = spawn("C:/Users/human/anaconda3/python", [pythonFilePath]); 경로에 맞춰 줄것
+3)pip install uvicorn 
+4) visual Studio Code -> electron_py_backend_form 폴더 이동 후 npm run electron:start
+
+결과값 : 메시지 가져오기 버튼 클릭 하면 => Hello from FastAPI! 결과값이 출력되어야 정상
