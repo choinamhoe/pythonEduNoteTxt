@@ -26,8 +26,6 @@ docker 서비스 실행 방법 : docker 설치 후  git clone https://github.com
 localhost 실행 : cmd창 실행 -> 위에 깃주소 받은 경로로 이동 -> build한 폴더를 app폴더안에 넣고 ->docker-compose up -d 실행
                     localhost창에 build폴더에 넣어준 것이 됨.
 
-
-
 ------------------------------------------------------------------------------------------------------------------
 일렉토리 패키지 : 프런트와 백앤드가 모두 공유하는 프로젝트.
 일렉토리 깃 주소 : git clone https://gitlab.cjcho.site/development/form/electron_py_backend_form
@@ -43,3 +41,4 @@ Anaconda Prompt을 열고 순서대로 실행
 결과값 : 메시지 가져오기 버튼 클릭 하면 => Hello from FastAPI! 결과값이 출력되어야 정상
 
 ------------------------------------------------------------------------------------------------------------------
+브랜치 test 테스트
