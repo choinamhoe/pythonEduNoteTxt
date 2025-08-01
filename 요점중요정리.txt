@@ -1,0 +1,20 @@
+비주얼 스튜디오코드 설치
+-code Runner
+-Live Preview
+-Live Server
+-Pritter - Code formatter (설치후 왼쪽아래 톱니바퀴 >> Settings >> Editor:Format On Save 체크>> Editor:Default Formatter에 Prettier - Code formatter 선택 후 저장
+1.React 폴더 생성
+폴더 생성 : npx create-react-app 폴더
+로컬 실행 : cd 폴더 이동 >> npm run start
+       실행 주소 : http://localhost:3000
+                     http://ipconfig주소:3000( http://192.168.0.17:3000/)
+
+
+router-dom : npx create-react-app 폴더 진행 후 npm install react-router-dom 실행.
+     확인방법 : package.json에 "react-router-dom": "^7.7.1", 있는지 확인
+
+조창제 강사님 git 주소 : git clone https://gitlab.cjcho.site/development/form/react_form
+git clone https://gitlab.cjcho.site/development/form/react_form/
+
+
+------------------------------------------------------------------------------------------------------------------
