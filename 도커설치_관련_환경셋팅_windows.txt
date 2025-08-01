@@ -28,3 +28,8 @@ wsl --import docker-desktop "D:\Docker" "D:\docker-desktop.tar" --version 2
 ### 참고
 https://hello-bryan.tistory.com/424
  # 도커 관련 
+nginx 관련 깃 주소 : git clone https://gitlab.cjcho.site/lacture_human/nginx
+
+localhost 실행 : cmd창 실행 -> 위에 깃주소 받은 경로로 이동 -> build한 폴더를 app폴더안에 넣고 ->docker-compose up -d 실행
+                    localhost창에 build폴더에 넣어준 것이 됨.
+                    
