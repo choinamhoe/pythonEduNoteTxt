@@ -69,3 +69,20 @@ Anaconda Prompt을 열고 순서대로 실행
 결과값 : 메시지 가져오기 버튼 클릭 하면 => Hello from FastAPI! 결과값이 출력되어야 정상
 
 ------------------------------------------------------------------------------------------------------------------
+백앤드 관련 실행 명령어(test1.js에 소스 수정할 경우) : 
+-nodemon은 반영시 서버를 재기동 해야 하는 부분을 프런트앤드처럼 실시간으로 실행할때 반영되게 하는 명령어 
+-package.json에 
+ "scripts": {
+    "start": "nodemon test1.js"
+  },
+수정을 하면 npm run start로 실행 가능.
+
+js에서 해당 경로 이동 후 아래 순서대로 실행(주석처리한 4가지 순서대로 실행.crud_eazy_server.js 파일 참조)
+// npm init -y
+// npm install express cookie-parser express-session jsonwebtoken body-parser
+// npm install -g nodemon
+// nodemon test1.js
+
+package.json : 내부 명령어
+-scripts : 명령어 생성 및 수정,관리
+-dependencies는 설치된 npm install 실행시 설치된 버전 확인
