@@ -15,6 +15,9 @@ router-dom : npx create-react-app 폴더 진행 후 npm install react-router-dom
 
 조창제 강사님 git 주소 : git clone https://gitlab.cjcho.site/development/form/react_form
 git clone https://gitlab.cjcho.site/development/form/react_form/
+git clone https://gitlab.cjcho.site/lacture_human/lacture_250721/250728
+git pull https://gitlab.cjcho.site/lacture_human/lacture_250721/250728
+백앤드 강의 : git clone https://gitlab.cjcho.site/lacture_human/lacture_250721/250804
 
 nginx 관련 깃 주소 : git clone https://gitlab.cjcho.site/lacture_human/nginx
                          git clone https://github.com/choinamhoe/nginx
@@ -25,6 +28,31 @@ docker 서비스 실행 방법 : docker 설치 후  git clone https://github.com
 
 localhost 실행 : cmd창 실행 -> 위에 깃주소 받은 경로로 이동 -> build한 폴더를 app폴더안에 넣고 ->docker-compose up -d 실행
                     localhost창에 build폴더에 넣어준 것이 됨.
+
+npm 설치 방법 : npm install react-router-dom
+                    프로젝트 시작 npm run start
+                    프로젝트 종료는 Ctrl + C
+react 검사 부분은 <React.StrictMode></React.StrictMode>안에서 실행한다.
+
+@@@@@@@@@@@@@@@@@@@@@ 클릭건수 출력 방법(React)
+import { useEffect, useState } from "react";
+
+const [count, setCount] = useState(0);
+  useEffect(() => {
+    console.log("count 값은", count);
+  }, [count]);
+  const handleClick = () => {
+    setCount(count + 1);
+  };
+  return (
+    <>
+      <button onClick={handleClick}>버튼</button>
+      <p>{count}</p>
+    </>
+  );
+@@@@@@@@@@@@@@@@@@@@@
+
+
 
 ------------------------------------------------------------------------------------------------------------------
 일렉토리 패키지 : 프런트와 백앤드가 모두 공유하는 프로젝트.
@@ -41,4 +69,3 @@ Anaconda Prompt을 열고 순서대로 실행
 결과값 : 메시지 가져오기 버튼 클릭 하면 => Hello from FastAPI! 결과값이 출력되어야 정상
 
 ------------------------------------------------------------------------------------------------------------------
-브랜치 test 테스트
