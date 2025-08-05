@@ -86,3 +86,28 @@ js에서 해당 경로 이동 후 아래 순서대로 실행(주석처리한 4�
 package.json : 내부 명령어
 -scripts : 명령어 생성 및 수정,관리
 -dependencies는 설치된 npm install 실행시 설치된 버전 확인
+------------------------------------------------------------------------------------------------------------------
+자바스크립트 안에서 파이썬 환경설정( : 비주얼 스튜디오 코드에서 작업
+1)파이썬 안에서 Fastapi 환경 설정
+1.Ctrl + Shift + p
+2.select interpreter
+3.파이썬 환경 선택
+
+4.터미널 창에 휴지통 모양 클릭해서 터미널 꺼주기
+5.상단창에 ... 클릭해서 Terminal >  New Terminal
+6.해당 경로 선택 후 pip install fastapi unicorn 실행
+6.python fastapi_server.py
+코딩 : 
+#pip install fastapi unicorn
+from fastapi import FastAPI
+import uvicorn
+
+app = FastAPI()
+uvicorn.run(app,host="0.0.0.0",port=8080)
+
+INFO:     Started server process [8956]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://0.0.0.0:8080 (Press CTRL+C to quit)
+위에 방식으로 나오면 성공
+------------------------------------------------------------------------------------------------------------------
