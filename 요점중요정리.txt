@@ -36,10 +36,11 @@ npm install
 nodemon cookie_eazy_server.js
 nodemon session_eazy_server.js
 
-
+교육자료 정리 : git clone https://github.com/choinamhoe/pythonEduNoteTxt
 
 nginx 관련 깃 주소 : git clone https://gitlab.cjcho.site/lacture_human/nginx
                          git clone https://github.com/choinamhoe/nginx
+                        
 
 git clone https://gitlab.cjcho.site/development/form/electron_py_backend_form
 
