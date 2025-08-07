@@ -36,10 +36,17 @@ npm install
 nodemon cookie_eazy_server.js
 nodemon session_eazy_server.js
 
+내 깃주소 : git clone https://github.com/choinamhoe/
 교육자료 정리 : git clone https://github.com/choinamhoe/pythonEduNoteTxt
-
+ db 연결       :  git clone https://github.com/choinamhoe/db_connect_lecture.git
+쿠키,섹션예제: git clone https://github.com/choinamhoe/cookie_session_ex.git
+백앤드관련 강의: git clone https://github.com/choinamhoe/backend_lecture.git 
+일렉토리 패키지: git clone https://github.com/choinamhoe/electron_py_backend_form.git
 nginx 관련 깃 주소 : git clone https://gitlab.cjcho.site/lacture_human/nginx
                          git clone https://github.com/choinamhoe/nginx
+리엑트_기본폼 : git clone https://github.com/choinamhoe/react_form.git
+리엑트 라운터테스트 : git clone https://github.com/choinamhoe/route_test.git
+스타벅스 로직 구현진행중 : git clone https://github.com/choinamhoe/starbucks.git
                         
 
 git clone https://gitlab.cjcho.site/development/form/electron_py_backend_form
