@@ -20,6 +20,11 @@ git pull https://gitlab.cjcho.site/lacture_human/lacture_250721/250728
 백앤드 강의 : git clone https://gitlab.cjcho.site/lacture_human/lacture_250721/250804
 데이터베이스 강의 : lacture_human / lacture_250721 / 250806 · GitLab
                          git clone http://gitlab.cjcho.site/lacture_human/lacture_250721/250806.git
+
+기상청 기상자료개발포털 : https://data.kma.go.kr/cmmn/main.do
+                                 cnh665@naver.com//cnhmook176!
+                                 로그인 후 관측>>메타데이터>>지도로선택>>지상>>종관기상관측>>전체선택후 조회>>csv버튼 클릭
+
 <!--  프론트  -->
 git clone https://gitlab.cjcho.site/lacture_human/lacture_250721/250804 cookie_session_ex
 cd cookie_session_ex
@@ -160,3 +165,17 @@ app.use(
 -npm run start
 -브라우저에서 F12 > Application 클릭하면 Cookies에 http://localhost:3000통해 쿠키가 저장
                                                      Local storage는 끄기전까지 유지
+------------------------------------------------------------------------------------------------------------------
+파이썬과 mysql(mariaDB) 연결 방법
+1.Anaconda.NAVIGATOR에서 연결
+1)Anaconda 프롬포트 :
+-pip install sqlalchemy fastapi uvicorn starlette pymysql bcrypt pandas
+-conda activate 가상환경명
+
+2)mysql db연결정보 포함하여 로컬 db 연결 방법(dbeaver에 연결된 부분으로 셋팅- docker로 연결 후 실행)
+https://github.com/choinamhoe/pythonEduNoteTxt 안에
+/python_Spyder_example/250808_최남회_spyder_database_example.py예제 참조
+
+with구문은 connect연결후 잠깐만 사용할때 그 구문안에서만 연결 conn연결 자동으로 연결 후 끊어지게 하기 위한 방법
+
+
