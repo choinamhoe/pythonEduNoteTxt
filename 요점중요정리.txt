@@ -52,8 +52,9 @@ nginx 관련 깃 주소 : git clone https://gitlab.cjcho.site/lacture_human/ngin
 리엑트_기본폼 : git clone https://github.com/choinamhoe/react_form.git
 리엑트 라운터테스트 : git clone https://github.com/choinamhoe/route_test.git
 스타벅스 로직 구현진행중 : git clone https://github.com/choinamhoe/starbucks.git
+weather_cron(크론탭같은 자동 실행방법)  : git clone https://github.com/choinamhoe/weather_cron.git
                         
-
+weather_cron : https://gitlab.cjcho.site/lacture_human/weather_cron
 git clone https://gitlab.cjcho.site/development/form/electron_py_backend_form
 
 docker 서비스 실행 방법 : docker 설치 후  git clone https://github.com/choinamhoe/nginx 다운
@@ -177,5 +178,30 @@ https://github.com/choinamhoe/pythonEduNoteTxt 안에
 /python_Spyder_example/250808_최남회_spyder_database_example.py예제 참조
 
 with구문은 connect연결후 잠깐만 사용할때 그 구문안에서만 연결 conn연결 자동으로 연결 후 끊어지게 하기 위한 방법
+------------------------------------------------------------------------------------------------------------------
+selenium :  인터넷 상에서 정보를 파이썬으로 가져오고 싶을때(pandas와 결합하여도 가능) 쓰는 방법
+               크롤링 할때 쓰는 패키지
+-파일 : 250808_최남회_spyder_database_selenium예제.py
+-환경설정 방법 : https://developer.microsoft.com/en-us/microsoft-edge/tools/webdriver/?form=MA13LH#downloads 접속
+                   Stable Channel에서 최신 버전으로 x64 다운로드
+                   edge://settings/help 자동 설치후 엣지 다시 시작
 
+-spyder_database_selenium예제.py : driver실행 하면 엣지창이 자동으로 떠야 함.
+                                              해당 창에 다른 창은 작업이 안되고 해당창에서 가능
+                                              1창에서 무조건 가능하고 다른창 열려도 첫번째 열린창으로 주소를 옮겨서 할것
+                                              다나와,멜론 사이트(https://www.melon.com/chart/)에서 띠운후에 작업을 실행해야 정상작동
+                                              드라이브 끌때 : #드라이브 끄려고 할때 방법
+                                               driver.quit()
+------------------------------------------------------------------------------------------------------------------
+크론탭 실행방법(docker이용하여 실행방법)
+weather_cron : https://gitlab.cjcho.site/lacture_human/weather_cron
+코론탭처럼 실행되게 하는 방법
+-최초 설치 : cmd창에서 해당 패키지 이동 docker build -t cron_test:latest -f Dockerfile .
+-(docker을 이용하여 리눅스에서 실행)                   
+크론탭 docker 실행 : 해당 패키지 이동 후 실행 - docker-compose up -d 
+크론탭 docker 실행중지 :                                   docker-compose down
 
+크론탭 수정 후 : docker-compose down 실행 후
+                      빌드(docker build -t cron_test:latest -f Dockerfile .)<<docker-compose up -d 
+                     여기서부터 다시 실행해야 정상 반영.
+------------------------------------------------------------------------------------------------------------------
