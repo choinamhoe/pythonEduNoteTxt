@@ -204,4 +204,6 @@ weather_cron : https://gitlab.cjcho.site/lacture_human/weather_cron
 크론탭 수정 후 : docker-compose down 실행 후
                       빌드(docker build -t cron_test:latest -f Dockerfile .)<<docker-compose up -d 
                      여기서부터 다시 실행해야 정상 반영.
+
+docker exec -it weathercron bash ==> ?????
 ------------------------------------------------------------------------------------------------------------------
