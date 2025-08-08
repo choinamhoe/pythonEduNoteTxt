@@ -200,4 +200,8 @@ weather_cron : https://gitlab.cjcho.site/lacture_human/weather_cron
 -(docker을 이용하여 리눅스에서 실행)                   
 크론탭 docker 실행 : 해당 패키지 이동 후 실행 - docker-compose up -d 
 크론탭 docker 실행중지 :                                   docker-compose down
+
+크론탭 수정 후 : docker-compose down 실행 후
+                      빌드(docker build -t cron_test:latest -f Dockerfile .)<<docker-compose up -d 
+                     여기서부터 다시 실행해야 정상 반영.
 ------------------------------------------------------------------------------------------------------------------
