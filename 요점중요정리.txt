@@ -120,7 +120,7 @@ package.json : 내부 명령어
 -scripts : 명령어 생성 및 수정,관리
 -dependencies는 설치된 npm install 실행시 설치된 버전 확인
 ------------------------------------------------------------------------------------------------------------------
-자바스크립트 안에서 파이썬 환경설정( : 비주얼 스튜디오 코드에서 작업
+자바스크립트와 백앤드 안에서 파이썬 환경설정( : 비주얼 스튜디오 코드에서 작업)
 1)파이썬 안에서 Fastapi 환경 설정
 1.Ctrl + Shift + p
 2.select interpreter
@@ -143,6 +143,8 @@ INFO:     Waiting for application startup.
 INFO:     Application startup complete.
 INFO:     Uvicorn running on http://0.0.0.0:8080 (Press CTRL+C to quit)
 위에 방식으로 나오면 성공
+한번만 실행할 때 : python main.py
+계속 서버 띠우게 하는 방법 : uvicorn main:app --reload --port 8000
 ------------------------------------------------------------------------------------------------------------------
 프런트앤드와 백앤드 호출
 1.권한이 있는 사이트만 접근하게 하는 방법(cookie_example.js로 확인)
@@ -162,7 +164,7 @@ app.use(
 
 2.프런트앤드에서 할일
 -npx create-react-app frontend
--cd frontend => npm install axios
+-cd frontend => npm install axios react-router-dom
 -npm run start
 -브라우저에서 F12 > Application 클릭하면 Cookies에 http://localhost:3000통해 쿠키가 저장
                                                      Local storage는 끄기전까지 유지
@@ -206,4 +208,43 @@ weather_cron : https://gitlab.cjcho.site/lacture_human/weather_cron
                      여기서부터 다시 실행해야 정상 반영.
 
 docker exec -it weathercron bash ==> ?????
+------------------------------------------------------------------------------------------------------------------
+로그인 구현(회원가입)
+-pip install sqlalchemy fastapi uvicorn starlette pymysql bcrypt pandas
+from pydantic import BaseModel
+class User(BaseModel):
+    userid: str
+    username: str
+    password: str
+
+@app.post("/users")
+async def create_user(data:User) :
+     print(data)
+     print(data.userid,data.username,data.password)
+
+     return JSONResponse(
+        content={"message":"회원가입 API 테스트"},
+        status_code=status.HTTP_200_OK
+    )
+------------------------------------------------------------------------------------------------------------------
+비밀번호 검증방법 코딩 => 실행이 안될 경우 pip install bcrypt 실행
+import bcrypt
+
+     hashed_pw = bcrypt.hashpw(data.password.encode(),
+                            bcrypt.gensalt()
+                            ).decode("utf-8")
+     print(hashed_pw)
+     #비밀번호 검증 부분
+     print(
+         bcrypt.checkpw(
+             'mook176!'.encode('utf-8'),
+             hashed_pw.encode('utf-8'),
+         )
+     )
+     print(
+         bcrypt.checkpw(
+             data.password.encode('utf-8'),
+             hashed_pw.encode('utf-8'),
+         )
+     )
 ------------------------------------------------------------------------------------------------------------------
