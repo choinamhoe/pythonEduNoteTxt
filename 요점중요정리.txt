@@ -13,7 +13,9 @@
 router-dom : npx create-react-app 폴더 진행 후 npm install react-router-dom 실행.
      확인방법 : package.json에 "react-router-dom": "^7.7.1", 있는지 확인
 
-조창제 강사님 git 주소 : git clone https://gitlab.cjcho.site/development/form/react_form
+                         
+조창제 강사님 git 주소 : 기본 주소(8월 18일날 제공) - https://gitlab.cjcho.site/lacture_human/lacture_250721
+git clone https://gitlab.cjcho.site/development/form/react_form
 git clone https://gitlab.cjcho.site/development/form/react_form/
 git clone https://gitlab.cjcho.site/lacture_human/lacture_250721/250728
 git pull https://gitlab.cjcho.site/lacture_human/lacture_250721/250728
@@ -24,6 +26,13 @@ git pull https://gitlab.cjcho.site/lacture_human/lacture_250721/250728
 기상청 기상자료개발포털 : https://data.kma.go.kr/cmmn/main.do
                                  cnh665@naver.com//cnhmook176!
                                  로그인 후 관측>>메타데이터>>지도로선택>>지상>>종관기상관측>>전체선택후 조회>>csv버튼 클릭
+
+포스트맨,프런트앤드,백앤드,코랩 기동 방법(동영상 포함) : https://gitlab.cjcho.site/lacture_human/lacture_250721/99_req
+cheatsheets.pdf · main · lacture_human / lacture_250721 / 250813 · GitLab
+Matplotlib 이미지 함수 api : Examples — Matplotlib 3.10.5 documentation
+                                   https://matplotlib.org/stable/gallery/index.html
+                                   https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.plot.html
+                                   https://gitlab.cjcho.site/lacture_human/lacture_250721/250813/-/blob/main/cheatsheets.pdf?ref_type=heads
 
 <!--  프론트  -->
 git clone https://gitlab.cjcho.site/lacture_human/lacture_250721/250804 cookie_session_ex
@@ -247,4 +256,31 @@ import bcrypt
              hashed_pw.encode('utf-8'),
          )
      )
+------------------------------------------------------------------------------------------------------------------
+cv2 : 이미지를 임포트 하는 함수
+# 아나콘다 명령 프로포트에서 패키지 이동 후 pip install numpy==1.26 opencv-python
+#이게 설치가 안될 경우 pip install numpy opencv-python 로 설치 할것
+#cv2.imread할때 한글 폴더로 된 경로는 읽지 못함.
+#이미지경로를 영문으로 된 폴더로 호출할 것
+import cv2
+import numpy as np 
+import matplotlib.pyplot as plt
+files = [
+    "E:/choinamhoe/images/img1.jpg",
+    "E:/choinamhoe/images/img2.jpg",
+    "E:/choinamhoe/images/img3.jpg"
+    ]
+cv2.imread(files[0]).shape 
+cv2.imread(files[1]).shape
+cv2.imread(files[2]).shape
+imgs = []
+for file in files:
+    img = cv2.imread(file)
+    new_img = cv2.resize(img, (512,512))
+    imgs.append(new_img)
+np.array(imgs).shape
+
+arrs = np.array(imgs)
+%matplotlib auto
+plt.imshow(arrs[0][:,:,::-1])
 ------------------------------------------------------------------------------------------------------------------
