@@ -75,6 +75,7 @@ df.isna()
 df["col1"].isna()
 df["col2"].isin(["가","다"])
 df.loc[df["col2"].isin(["가","다"]),:]
+df.loc[df["col2"].isin(["가","다"])]
 df["col2"].value_counts()
 df
 """
@@ -146,6 +147,7 @@ df = pd.DataFrame(
 df
 new_df=pd.melt(df, id_vars=["학생"]) #,var_name="과목"
 new_df
+pd.get_dummies(new_df, columns=["variable"],dtype=np.int32)
 pd.get_dummies(new_df, columns=["variable"],dtype=np.int32)
 new_df.pivot(index="학생",columns="variable")
 """

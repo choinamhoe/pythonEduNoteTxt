@@ -284,3 +284,20 @@ arrs = np.array(imgs)
 %matplotlib auto
 plt.imshow(arrs[0][:,:,::-1])
 ------------------------------------------------------------------------------------------------------------------
+빅데이터 : https://action-makes-fortune.tistory.com/entry/빅데이터분석기사-3회-실기-문제-복원-기출
+              https://www.dataq.or.kr/www/main.do
+------------------------------------------------------------------------------------------------------------------
+지도 판다스 관련 : 
+pip install geopandas
+pip install contextily
+
+import geopandas as gpd
+import matplotlib.pyplot as plt
+%matplotlib auto
+shp_file = "E:/최남회/파이썬개발에대한파일모음/기상철 기상자료개발포털/20250819/ctprvn_20230729/ctprvn.shp"
+gdf = gpd.read_file(shp_file)
+gdf = gdf.set_crs("EPSG:5179", allow_override=True)
+gdf = gdf.to_crs(epsg=4326)
+gdf.plot()
+import contextily as ctx
+------------------------------------------------------------------------------------------------------------------
