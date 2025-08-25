@@ -27,11 +27,8 @@ git pull https://gitlab.cjcho.site/lacture_human/lacture_250721/250728
                                  cnh665@naver.com//cnhmook176!
                                  로그인 후 관측>>메타데이터>>지도로선택>>지상>>종관기상관측>>전체선택후 조회>>csv버튼 클릭
 조창제강사_해양자료시각화_심평원인공지능자료 : git clone https://gitlab.cjcho.site/lacture_human/lacture_250721/250813
-<<<<<<< HEAD
 빅데이터와 네트워크,소프트웨어 강의자료 : git clone http://gitlab.cjcho.site/lacture_human/lacture_250721/250820
 인공지능 수학통계방법론 : git clone http://gitlab.cjcho.site/lacture_human/lacture_250721/250821
-=======
->>>>>>> 1c36149b78e2c1962e1fd826b726b33f1e554a6c
 
 포스트맨,프런트앤드,백앤드,코랩 기동 방법(동영상 포함) : https://gitlab.cjcho.site/lacture_human/lacture_250721/99_req
 cheatsheets.pdf · main · lacture_human / lacture_250721 / 250813 · GitLab
@@ -68,7 +65,6 @@ nginx 관련 깃 주소 : git clone https://gitlab.cjcho.site/lacture_human/ngin
 리엑트 라운터테스트 : git clone https://github.com/choinamhoe/route_test.git
 스타벅스 로직 구현진행중 : git clone https://github.com/choinamhoe/starbucks.git
 weather_cron(크론탭같은 자동 실행방법)  : git clone https://github.com/choinamhoe/weather_cron.git
-<<<<<<< HEAD
 
 ##########################git 관련 명령어 start
 1. git을 통해 과거로 되돌아가는 방법 3가지
@@ -158,9 +154,6 @@ git push https://github.com/choinamhoe/pythonEduNoteTxt -d Academy
 
 ##########################git 관련 명령어 end
                     
-=======
-                        
->>>>>>> 1c36149b78e2c1962e1fd826b726b33f1e554a6c
 weather_cron : https://gitlab.cjcho.site/lacture_human/weather_cron
 git clone https://gitlab.cjcho.site/development/form/electron_py_backend_form
 
@@ -417,7 +410,6 @@ m = folium.Map(location=[37.5665, 126.9780],
                zoom_start=15, 
                tiles="cartodb positron") 
 m.save('map.html')
-<<<<<<< HEAD
 ------------------------------------------------------------------------------------------------------------------
 20250821
 CPU와 GPU의 차이 동영상 주소(NVIDIA의 과학시간 - GPU와 CPU의 차이) : https://www.youtube.com/watch?v=1BAZf3PsjWA&t=1s
@@ -432,8 +424,61 @@ Papers with Code 서비스 중단, 대안은? : 네이버 블로그 : https://m.
 Trending Papers - Hugging Face : https://huggingface.co/papers/trending
 애자일 소프트웨어 개발 선언 4가지 가치와 그 이면의 12가지 원칙 :https://pmnagile.tistory.com/entry/애자일-소프트웨어-개발-선언-4가지-가치와-그-이면의-12가지-원칙
 SQLD 문제은행 - 기출문제, 예상문제, 자격증 대비 학습, OX퀴즈, 모의고사 : https://www.sqld.kr/main
+[OpenCV Practice 09 - 2] 이미지 변형 (Rotation, Affine, Perspective) - 데이터 사이언스 사용 설명서 : https://dsbook.tistory.com/184
+누구나 파이썬 통계분석 홈페이지 : https://www.hanbit.co.kr/support/supplement_list.html->누구나 검색 -> 소스코드 클릭
+Boxplot 그래프 해석방법(이상치 탐색방법) : https://www.blog.data101.io/355
 ------------------------------------------------------------------------------------------------------------------
 자유도(통계학) : https://ko.wikipedia.org/wiki/%EC%9E%90%EC%9C%A0%EB%8F%84_(%ED%86%B5%EA%B3%84%ED%95%99)
-=======
 ------------------------------------------------------------------------------------------------------------------
->>>>>>> 1c36149b78e2c1962e1fd826b726b33f1e554a6c
+[회귀모형 정의] - 변수 선택법
+[전진선택법]
+x1 , x2 , x3 , x4 
+
+y = x1(AIC 310),  y= x2(300), y= x3(350), y = x4(380)
+> x2   AIC 300
+
+y = x2 + x1(240), y = x2 + x3(220), y = x2 + x4(200)
+> x2 + x4   AIC 200
+
+y = x2 + x4 + x1(280), y = x2 + x4 + x3(250)
+AIC 250 -> AIC 가 기존보다 안좋아짐 
+최종 변수는 x2 + x4
+
+
+[후진제거법]
+
+y = x1+ x2+ x3+ x4 (AIC 300)
+
+y = x1+ x2+ x3(AIC 250), y = x1+ x2+ x4(AIC 220), 
+y = x1+ x3+ x4(AIC 210), y = x2+ x3+ x4(AIC 200)
+
+x2 + x3 + x4 선택
+
+
+[단계적 방법]
+y = x1(AIC 310),  y= x2(300), y= x3(350), y = x4(380)
+> x2   AIC 300
+
+y = x2 + x1(240), y = x2 + x3(220), y = x2 + x4(200)
+> x2 + x4   AIC 200
+
+y = x2 + x4 + x1(280), y = x2 + x4 + x3(250)
+y = x4(AIC 380) , y = x2(300)
+------------------------------------------------------------------------------------------------------------------
+pip install statsmodels
+import statsmodels.api as sm 
+plot_df["const"] = 1
+X = plot_df.drop("mathematics",axis=1)
+Y = plot_df["mathematics"].values
+X.shape, Y.shape
+model = sm.OLS(Y, X)
+results = model.fit()
+
+print(results.summary())
+y_pred = results.predict(X)
+X
+Y
+model
+results
+y_pred
+------------------------------------------------------------------------------------------------------------------
