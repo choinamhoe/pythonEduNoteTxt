@@ -27,8 +27,11 @@ git pull https://gitlab.cjcho.site/lacture_human/lacture_250721/250728
                                  cnh665@naver.com//cnhmook176!
                                  로그인 후 관측>>메타데이터>>지도로선택>>지상>>종관기상관측>>전체선택후 조회>>csv버튼 클릭
 조창제강사_해양자료시각화_심평원인공지능자료 : git clone https://gitlab.cjcho.site/lacture_human/lacture_250721/250813
+<<<<<<< HEAD
 빅데이터와 네트워크,소프트웨어 강의자료 : git clone http://gitlab.cjcho.site/lacture_human/lacture_250721/250820
 인공지능 수학통계방법론 : git clone http://gitlab.cjcho.site/lacture_human/lacture_250721/250821
+=======
+>>>>>>> 1c36149b78e2c1962e1fd826b726b33f1e554a6c
 
 포스트맨,프런트앤드,백앤드,코랩 기동 방법(동영상 포함) : https://gitlab.cjcho.site/lacture_human/lacture_250721/99_req
 cheatsheets.pdf · main · lacture_human / lacture_250721 / 250813 · GitLab
@@ -65,6 +68,7 @@ nginx 관련 깃 주소 : git clone https://gitlab.cjcho.site/lacture_human/ngin
 리엑트 라운터테스트 : git clone https://github.com/choinamhoe/route_test.git
 스타벅스 로직 구현진행중 : git clone https://github.com/choinamhoe/starbucks.git
 weather_cron(크론탭같은 자동 실행방법)  : git clone https://github.com/choinamhoe/weather_cron.git
+<<<<<<< HEAD
 
 ##########################git 관련 명령어 start
 1. git을 통해 과거로 되돌아가는 방법 3가지
@@ -154,6 +158,9 @@ git push https://github.com/choinamhoe/pythonEduNoteTxt -d Academy
 
 ##########################git 관련 명령어 end
                     
+=======
+                        
+>>>>>>> 1c36149b78e2c1962e1fd826b726b33f1e554a6c
 weather_cron : https://gitlab.cjcho.site/lacture_human/weather_cron
 git clone https://gitlab.cjcho.site/development/form/electron_py_backend_form
 
@@ -410,6 +417,7 @@ m = folium.Map(location=[37.5665, 126.9780],
                zoom_start=15, 
                tiles="cartodb positron") 
 m.save('map.html')
+<<<<<<< HEAD
 ------------------------------------------------------------------------------------------------------------------
 20250821
 CPU와 GPU의 차이 동영상 주소(NVIDIA의 과학시간 - GPU와 CPU의 차이) : https://www.youtube.com/watch?v=1BAZf3PsjWA&t=1s
@@ -426,3 +434,6 @@ Trending Papers - Hugging Face : https://huggingface.co/papers/trending
 SQLD 문제은행 - 기출문제, 예상문제, 자격증 대비 학습, OX퀴즈, 모의고사 : https://www.sqld.kr/main
 ------------------------------------------------------------------------------------------------------------------
 자유도(통계학) : https://ko.wikipedia.org/wiki/%EC%9E%90%EC%9C%A0%EB%8F%84_(%ED%86%B5%EA%B3%84%ED%95%99)
+=======
+------------------------------------------------------------------------------------------------------------------
+>>>>>>> 1c36149b78e2c1962e1fd826b726b33f1e554a6c
