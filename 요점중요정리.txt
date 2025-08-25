@@ -13,7 +13,9 @@
 router-dom : npx create-react-app 폴더 진행 후 npm install react-router-dom 실행.
      확인방법 : package.json에 "react-router-dom": "^7.7.1", 있는지 확인
 
-조창제 강사님 git 주소 : git clone https://gitlab.cjcho.site/development/form/react_form
+                         
+조창제 강사님 git 주소 : 기본 주소(8월 18일날 제공) - https://gitlab.cjcho.site/lacture_human/lacture_250721
+git clone https://gitlab.cjcho.site/development/form/react_form
 git clone https://gitlab.cjcho.site/development/form/react_form/
 git clone https://gitlab.cjcho.site/lacture_human/lacture_250721/250728
 git pull https://gitlab.cjcho.site/lacture_human/lacture_250721/250728
@@ -24,6 +26,16 @@ git pull https://gitlab.cjcho.site/lacture_human/lacture_250721/250728
 기상청 기상자료개발포털 : https://data.kma.go.kr/cmmn/main.do
                                  cnh665@naver.com//cnhmook176!
                                  로그인 후 관측>>메타데이터>>지도로선택>>지상>>종관기상관측>>전체선택후 조회>>csv버튼 클릭
+조창제강사_해양자료시각화_심평원인공지능자료 : git clone https://gitlab.cjcho.site/lacture_human/lacture_250721/250813
+빅데이터와 네트워크,소프트웨어 강의자료 : git clone http://gitlab.cjcho.site/lacture_human/lacture_250721/250820
+인공지능 수학통계방법론 : git clone http://gitlab.cjcho.site/lacture_human/lacture_250721/250821
+
+포스트맨,프런트앤드,백앤드,코랩 기동 방법(동영상 포함) : https://gitlab.cjcho.site/lacture_human/lacture_250721/99_req
+cheatsheets.pdf · main · lacture_human / lacture_250721 / 250813 · GitLab
+Matplotlib 이미지 함수 api : Examples — Matplotlib 3.10.5 documentation
+                                   https://matplotlib.org/stable/gallery/index.html
+                                   https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.plot.html
+                                   https://gitlab.cjcho.site/lacture_human/lacture_250721/250813/-/blob/main/cheatsheets.pdf?ref_type=heads
 
 <!--  프론트  -->
 git clone https://gitlab.cjcho.site/lacture_human/lacture_250721/250804 cookie_session_ex
@@ -52,8 +64,97 @@ nginx 관련 깃 주소 : git clone https://gitlab.cjcho.site/lacture_human/ngin
 리엑트_기본폼 : git clone https://github.com/choinamhoe/react_form.git
 리엑트 라운터테스트 : git clone https://github.com/choinamhoe/route_test.git
 스타벅스 로직 구현진행중 : git clone https://github.com/choinamhoe/starbucks.git
-                        
+weather_cron(크론탭같은 자동 실행방법)  : git clone https://github.com/choinamhoe/weather_cron.git
 
+##########################git 관련 명령어 start
+1. git을 통해 과거로 되돌아가는 방법 3가지
+이전 내용으로 되돌아가는 방법은 크게 3가지가 있습니다.
+(급하신 분들께서는 2번의 사용방법을 바로 보시길 바랍니다. 단, 시간이 되시는 분들께서는 특징을 함께 살펴보셔야 이해가 쉬우실 것 같습니다.)
+
+reset
+현재 작업한 내용을 git과 로컬에서 흔적도 없이 모두 삭제하고 이전으로 되돌아갑니다. 마치 아무 일도 없없다~라는 느낌으로 말이죠. 한번 rest 후엔 다시 되돌릴 수 없기 때문에 굉장히 조심해야 합니다.
+또한, 팀 또는 회사 내 프로젝트 단위로 git을 협업하여 쓰는 경우 같은 브랜치의 내용을 공유하는 사람이 본인 외 1명이라도 있다면 쓸 수 없는 방법입니다.(ex-본인과 협엽자 ㅁㅁ씨는 같이 'sub'이라는 브랜치에서 작업중이었습니다. 문제가 발생하여 본인이 5에서 3의 commit 위치로 돌아가기 위해 reset하게 되면 3이후의 모든 내용이 git상에 없어졌기 때문에 길이 이어져 있지 않아 되돌아가기 까지 그 사이에 commit/push한 작업 내용이 모두 날아가거나 ㅁㅁ씨가 commit 또는 push를 못하는 에러가 발생하는 등의 무서운 일들이 발생하게 됩니다.) 따라서 협업 시엔 반드시 revert를 쓰시는 것이 심신에 안정감을 줍니다ㅎㅎ..
+
+
+revert
+위에서 본 무시무시한 reset과는 달리, 원하는 위치의 commit내용을 복사하여 현재 위치에 커밋하게 됩니다. 새로운 커밋이 생김으로써 이전의 커밋은 그대로 유지하기 때문에 revert 후 다시 되돌아가고 싶을 때 log를 통해 다시 그 위치를 확인 후 돌아갈 수 있습니다.(뒤가 없는 reset과는 확실히 다르죠?) 이러한 특징 덕분에 중간에 특정 커밋만 취소하거나 삭제하기에도 유용합니다.(헷갈릴 수 있어 추가하자면, 새로 생성된 커밋에는 복사한 내용이 빠져있는 채로 만들어져서 그 부분만 제외하고 수정이 가능하다 보면 됩니다. 저의 경우는 구간으로 쓸 수 있는 revert의 특성을 이용하여 설치내용을 commit한 1~3까지의 커밋내용을 제외하고 새로 커밋하고자 revert를 사용하였습니다.)
+
+
+restore
+현재 로컬 작업 내용을 버리고자 할 때 주로 사용합니다. 쉽게 말해 git status 사용 시 초록색이던 내용을 다시 빨간색으로 되돌릴 때 사용합니다. 즉, 로컬과 git에 아무것도 올라가지 않도록 다시 깔끔하게 기존 상태(원하는 커밋시점)로 되돌린다고 보시면 됩니다. 이전의 2가지 방법은 commit이 되어 있던 기록들을 기준으로 사용한다면, restore는 현재 status의 상태도 조절이 가능합니다. 이 친구 또한 이전 버전의 상태로 되돌아가는 방법이 있으며 reset처럼 이력이 말끔히 사라지기 때문에 주의를 요합니다.
+
+//모든 시작은 현재 상태를 확인하며 시작합니다.
+git status
+
+//초록색 글자: 쉽게 말해 git에 저장이 되어 있는 상태이다.(git 내에도 많은 공간이 나뉘어 있지만 여기서는 쉽게 작성하고자 생략하였다.)
+//빨간색 글자: 새로 생성하거나 수정 후 저장되지 않은 상태의 파일/폴더를 말함.
+
+//이전 커밋 기록 나열하여 보기
+git reflog
+
+//내역 확인(최신 커밋이 0이다.)
+70bf317 (HEAD -> miles, origin/miles) HEAD@{0}: commit: Install sequelize
+f499ceb HEAD@{1}: commit: install ExcelJS
+055b251 HEAD@{2}: commit: excel download용 패키지 설치
+986c4fd HEAD@{3}: commit: add excel export
+ca04ff3 HEAD@{4}: commit: NewsLetter SMTP 설정완료
+//로그에서 나갈땐 q쓰고 엔터치면 다시 상태창에서 글이 써진다.
+
+//기본 사용(-mixed 생략가능)
+git reset (-mixed) HEAD~1 //마지막 커밋 취소(=HEAD1로 돌아감)
+//모두 삭제(한번 사용 후 로컬의 내용들도 사라질 수 있으니 주의)
+git reset --hard HEAD~2 //HEAD2로 돌아가며 작업한 내용들 모두 사라짐.
+//강제 push만 가능
+
+//새로운 커밋 생성 후 내용 덮어쓰기(각각의 로그도 기록됨)
+git revert 986c4fd //add excel export 커밋상태로 되돌아 간다.
+git revert f499ceb,055b251, 986c4fd //이렇게 구간으로 쓸 수도 있다고 함.
+//commit은 자동으로 새로 생성됨. push를 강제로 하지 않아도 된다.
+
+//특정 커밋 상태로 되돌리기(로컬 내용 저장 안해도 돌아갈 수 있음. 버리고 돌아감.)
+git restore --source=ca04ff3 (파일명) //파일명까지 쓸 경우 해당 파일만 적용되며 생략 시 전체 되돌리기.
+//commit 수정 가능 상태로 돌아감. push 가능(현재 커밋하지 않은 상태의 경우 내용 사라짐.)
+
+//상태 상관 없이 git에 올라간 저장내용 취소(초록->빨강으로)
+git restore --staged (파일명)
+
+//현재 수정된 내용 모두 삭제하고 원하는 커밋 위치로 이동하기
+git restore . //되돌릴 수 없음 '.'은 띄워쓰기 구분하여 작성
+
+git reflog : 
+1c36149 (HEAD -> test) HEAD@{0}: checkout: moving from test to test
+1c36149 (HEAD -> test) HEAD@{1}: pull https://github.com/choinamhoe/pythonEduNot
+eTxt: Fast-forward
+8b5ba04 HEAD@{2}: reset: moving to 8b5ba04
+1c36149 (HEAD -> test) HEAD@{3}: pull https://github.com/choinamhoe/pythonEduNot
+eTxt: Fast-forward
+8b5ba04 HEAD@{4}: reset: moving to 8b5ba04
+47ece81 HEAD@{5}: reset: moving to 47ece81
+47ece81 HEAD@{6}: reset: moving to 47ece81
+47ece81 HEAD@{7}: reset: moving to 47ece81
+47ece81 HEAD@{8}: commit: 250821 오늘은 강의만 함.조창제 강사 - 빅데이터와 인공
+지능 이해와 소프트웨어,네트워크에 대한 강의로만 이루어진 파일 모음
+8b5ba04 HEAD@{9}: commit: 250820 조덕가덕도예제,실시간해양관측정보시스템정보,fol
+ium지도마크,geopandas와folumn연결,싸이킬럿 실습에 대한 파일 모음과 개발내용,조창
+제강사님이 수업한 파일까지 포함
+160492f HEAD@{10}: commit: 250819 파일생성및복사등파일관리와 기상청csv파일로그래
+프시각화및,지점별지도판다스예제를 개발하여 조창제강사님개발목록과 내가 개발한 목
+록 둘다 저장
+5cddd32 HEAD@{11}: pull https://github.com/choinamhoe/pythonEduNoteTxt: Fast-for
+ward
+2fcb0a7 HEAD@{12}: commit: 250818 연습(numpy,pandas,matplotlib) 교육 연습 및 정
+리하고 빅분기 관련 수학 통계 방법 파일(05.인공지능 수학 통계 방법론(32h).pdf) 추
+가
+git reset --hard '4278895'
+git push --forse https://github.com/choinamhoe/pythonEduNoteTxt test 
+git push --forse https://github.com/choinamhoe/pythonEduNoteTxt Academy
+git push origin test --f
+git push https://github.com/choinamhoe/pythonEduNoteTxt -d test
+git push https://github.com/choinamhoe/pythonEduNoteTxt -d Academy
+
+##########################git 관련 명령어 end
+                    
+weather_cron : https://gitlab.cjcho.site/lacture_human/weather_cron
 git clone https://gitlab.cjcho.site/development/form/electron_py_backend_form
 
 docker 서비스 실행 방법 : docker 설치 후  git clone https://github.com/choinamhoe/nginx 다운
@@ -119,7 +220,7 @@ package.json : 내부 명령어
 -scripts : 명령어 생성 및 수정,관리
 -dependencies는 설치된 npm install 실행시 설치된 버전 확인
 ------------------------------------------------------------------------------------------------------------------
-자바스크립트 안에서 파이썬 환경설정( : 비주얼 스튜디오 코드에서 작업
+자바스크립트와 백앤드 안에서 파이썬 환경설정( : 비주얼 스튜디오 코드에서 작업)
 1)파이썬 안에서 Fastapi 환경 설정
 1.Ctrl + Shift + p
 2.select interpreter
@@ -142,6 +243,8 @@ INFO:     Waiting for application startup.
 INFO:     Application startup complete.
 INFO:     Uvicorn running on http://0.0.0.0:8080 (Press CTRL+C to quit)
 위에 방식으로 나오면 성공
+한번만 실행할 때 : python main.py
+계속 서버 띠우게 하는 방법 : uvicorn main:app --reload --port 8000
 ------------------------------------------------------------------------------------------------------------------
 프런트앤드와 백앤드 호출
 1.권한이 있는 사이트만 접근하게 하는 방법(cookie_example.js로 확인)
@@ -161,7 +264,7 @@ app.use(
 
 2.프런트앤드에서 할일
 -npx create-react-app frontend
--cd frontend => npm install axios
+-cd frontend => npm install axios react-router-dom
 -npm run start
 -브라우저에서 F12 > Application 클릭하면 Cookies에 http://localhost:3000통해 쿠키가 저장
                                                      Local storage는 끄기전까지 유지
@@ -177,5 +280,149 @@ https://github.com/choinamhoe/pythonEduNoteTxt 안에
 /python_Spyder_example/250808_최남회_spyder_database_example.py예제 참조
 
 with구문은 connect연결후 잠깐만 사용할때 그 구문안에서만 연결 conn연결 자동으로 연결 후 끊어지게 하기 위한 방법
+------------------------------------------------------------------------------------------------------------------
+selenium :  인터넷 상에서 정보를 파이썬으로 가져오고 싶을때(pandas와 결합하여도 가능) 쓰는 방법
+               크롤링 할때 쓰는 패키지
+-파일 : 250808_최남회_spyder_database_selenium예제.py
+-환경설정 방법 : https://developer.microsoft.com/en-us/microsoft-edge/tools/webdriver/?form=MA13LH#downloads 접속
+                   Stable Channel에서 최신 버전으로 x64 다운로드
+                   edge://settings/help 자동 설치후 엣지 다시 시작
 
+-spyder_database_selenium예제.py : driver실행 하면 엣지창이 자동으로 떠야 함.
+                                              해당 창에 다른 창은 작업이 안되고 해당창에서 가능
+                                              1창에서 무조건 가능하고 다른창 열려도 첫번째 열린창으로 주소를 옮겨서 할것
+                                              다나와,멜론 사이트(https://www.melon.com/chart/)에서 띠운후에 작업을 실행해야 정상작동
+                                              드라이브 끌때 : #드라이브 끄려고 할때 방법
+                                               driver.quit()
+------------------------------------------------------------------------------------------------------------------
+크론탭 실행방법(docker이용하여 실행방법)
+weather_cron : https://gitlab.cjcho.site/lacture_human/weather_cron
+코론탭처럼 실행되게 하는 방법
+-최초 설치 : cmd창에서 해당 패키지 이동 docker build -t cron_test:latest -f Dockerfile .
+-(docker을 이용하여 리눅스에서 실행)                   
+크론탭 docker 실행 : 해당 패키지 이동 후 실행 - docker-compose up -d 
+크론탭 docker 실행중지 :                                   docker-compose down
 
+크론탭 수정 후 : docker-compose down 실행 후
+                      빌드(docker build -t cron_test:latest -f Dockerfile .)<<docker-compose up -d 
+                     여기서부터 다시 실행해야 정상 반영.
+
+docker exec -it weathercron bash ==> ?????
+------------------------------------------------------------------------------------------------------------------
+로그인 구현(회원가입)
+-pip install sqlalchemy fastapi uvicorn starlette pymysql bcrypt pandas
+from pydantic import BaseModel
+class User(BaseModel):
+    userid: str
+    username: str
+    password: str
+
+@app.post("/users")
+async def create_user(data:User) :
+     print(data)
+     print(data.userid,data.username,data.password)
+
+     return JSONResponse(
+        content={"message":"회원가입 API 테스트"},
+        status_code=status.HTTP_200_OK
+    )
+------------------------------------------------------------------------------------------------------------------
+비밀번호 검증방법 코딩 => 실행이 안될 경우 pip install bcrypt 실행
+import bcrypt
+
+     hashed_pw = bcrypt.hashpw(data.password.encode(),
+                            bcrypt.gensalt()
+                            ).decode("utf-8")
+     print(hashed_pw)
+     #비밀번호 검증 부분
+     print(
+         bcrypt.checkpw(
+             'mook176!'.encode('utf-8'),
+             hashed_pw.encode('utf-8'),
+         )
+     )
+     print(
+         bcrypt.checkpw(
+             data.password.encode('utf-8'),
+             hashed_pw.encode('utf-8'),
+         )
+     )
+------------------------------------------------------------------------------------------------------------------
+cv2 : 이미지를 임포트 하는 함수
+# 아나콘다 명령 프로포트에서 패키지 이동 후 pip install numpy==1.26 opencv-python
+#이게 설치가 안될 경우 pip install numpy opencv-python 로 설치 할것
+#cv2.imread할때 한글 폴더로 된 경로는 읽지 못함.
+#이미지경로를 영문으로 된 폴더로 호출할 것
+import cv2
+import numpy as np 
+import matplotlib.pyplot as plt
+files = [
+    "E:/choinamhoe/images/img1.jpg",
+    "E:/choinamhoe/images/img2.jpg",
+    "E:/choinamhoe/images/img3.jpg"
+    ]
+cv2.imread(files[0]).shape 
+cv2.imread(files[1]).shape
+cv2.imread(files[2]).shape
+imgs = []
+for file in files:
+    img = cv2.imread(file)
+    new_img = cv2.resize(img, (512,512))
+    imgs.append(new_img)
+np.array(imgs).shape
+
+arrs = np.array(imgs)
+%matplotlib auto
+plt.imshow(arrs[0][:,:,::-1])
+------------------------------------------------------------------------------------------------------------------
+빅데이터 : https://action-makes-fortune.tistory.com/entry/빅데이터분석기사-3회-실기-문제-복원-기출
+              https://www.dataq.or.kr/www/main.do
+------------------------------------------------------------------------------------------------------------------
+지도 판다스 관련 : 
+pip install geopandas
+pip install contextily
+
+import geopandas as gpd
+import matplotlib.pyplot as plt
+%matplotlib auto
+shp_file = "E:/최남회/파이썬개발에대한파일모음/기상철 기상자료개발포털/20250819/ctprvn_20230729/ctprvn.shp"
+gdf = gpd.read_file(shp_file)
+gdf = gdf.set_crs("EPSG:5179", allow_override=True)
+gdf = gdf.to_crs(epsg=4326)
+gdf.plot()
+import contextily as ctx
+------------------------------------------------------------------------------------------------------------------
+20250820
+folium
+설치 : pip install folium  scikit-learn  seaborn
+[Python] 파이썬 폴리움(folium) - 지도 시각화 라이브러리 : https://m.blog.naver.com/dsz08082/222801593268
+브이월드 : https://www.vworld.kr/v4po_main.do
+[QGIS] V-World 데이터 연결(WMS/WFS) - 브이월드 데이터 연결 방법 : https://m.blog.naver.com/cherish_0920/223081462153	
+8. Dataset loading utilities — scikit-learn 1.7.1 documentation : https://scikit-learn.org/stable/datasets.html
+중국 데이터 一文看懂seaborn的pairplot - 知乎 : https://zhuanlan.zhihu.com/p/389361816
+
+import sklearn, seaborn, folium
+
+1) 백그라운드 및 쓰는 방식 : https://python-visualization.github.io/folium/latest/user_guide/raster_layers/tiles.html
+import folium
+#m = folium.Map(location=[37.5665, 126.9780], zoom_start=12)
+m = folium.Map(location=[37.5665, 126.9780],
+               zoom_start=15, 
+               tiles="cartodb positron") 
+m.save('map.html')
+------------------------------------------------------------------------------------------------------------------
+20250821
+CPU와 GPU의 차이 동영상 주소(NVIDIA의 과학시간 - GPU와 CPU의 차이) : https://www.youtube.com/watch?v=1BAZf3PsjWA&t=1s
+CPU(중앙처리장치)는 순차처리,연산속도는 빠름.
+GPU(그래픽처리장치)는 병렬처리,한번에 처리,행렬처리에 적합
+[UML] 유스케이스 다이어그램(Usecase Diagram) 완벽 정리 : https://limsw.tistory.com/118#google_vignette
+와이어샤크 사용법(WIRESHARK) 과 패킷 분석하기(실제 네트워크가 없는데 테스트할수 있는 방법) : https://m.blog.naver.com/harry5313/221413016102
+스푸핑 Spoofing / 스누핑 Snooping / 스니핑 Sniffing : https://m.blog.naver.com/techref/223235223764
+시큐어코딩(Secure Coding) : 네이버 블로그 : https://blog.naver.com/PostView.naver?blogId=teezeei&logNo=222767629694
+개발자를 위한 웹 해킹 | 권현준 - 교보문고 : https://product.kyobobook.co.kr/detail/S000212924380
+Papers with Code 서비스 중단, 대안은? : 네이버 블로그 : https://m.blog.naver.com/00000_syj/223965204940
+Trending Papers - Hugging Face : https://huggingface.co/papers/trending
+애자일 소프트웨어 개발 선언 4가지 가치와 그 이면의 12가지 원칙 :https://pmnagile.tistory.com/entry/애자일-소프트웨어-개발-선언-4가지-가치와-그-이면의-12가지-원칙
+SQLD 문제은행 - 기출문제, 예상문제, 자격증 대비 학습, OX퀴즈, 모의고사 : https://www.sqld.kr/main
+------------------------------------------------------------------------------------------------------------------
+자유도(통계학) : https://ko.wikipedia.org/wiki/%EC%9E%90%EC%9C%A0%EB%8F%84_(%ED%86%B5%EA%B3%84%ED%95%99)
