@@ -109,7 +109,11 @@ bcrypt.checkpw('aaa'.encode(), hashed_password.encode())
 #select * from table where True ; 주게 되면 모든 테이블을 반환
 #select * from table;과 같은 결과 반환
 # OR '1'='1' 이라고 조건을 주었기 때문에 WHERE 비밀번호검증 or '1'='1' 이라고 됨
+<<<<<<< HEAD
 password  = "abc' OR '1'='1'"
+=======
+userid  = "abc' OR '1'='1'"
+>>>>>>> 1c36149b78e2c1962e1fd826b726b33f1e554a6c
 query = f"""
 SELECT password FROM users WHERE userid = '{userid}';
 """
@@ -119,8 +123,15 @@ with engine.connect() as conn:
     hashed_password = res.fetchone()[0]
 hashed_password
 
+<<<<<<< HEAD
 password  = "abc' OR '1'='1'"
 # SQL 인젝션 방지
+=======
+
+# SQL 인젝션 방지
+userid  = "abc' OR '1'='1'"
+userid = "choinamhoe"
+>>>>>>> 1c36149b78e2c1962e1fd826b726b33f1e554a6c
 query = """
 SELECT password FROM users WHERE userid = :userid;
 """
