@@ -29,6 +29,7 @@ git pull https://gitlab.cjcho.site/lacture_human/lacture_250721/250728
 조창제강사_해양자료시각화_심평원인공지능자료 : git clone https://gitlab.cjcho.site/lacture_human/lacture_250721/250813
 빅데이터와 네트워크,소프트웨어 강의자료 : git clone http://gitlab.cjcho.site/lacture_human/lacture_250721/250820
 인공지능 수학통계방법론 : git clone http://gitlab.cjcho.site/lacture_human/lacture_250721/250821
+06.인공지능 구현,AI 간단설명 : git clone https://gitlab.cjcho.site/lacture_human/lacture_250721/250827
 
 포스트맨,프런트앤드,백앤드,코랩 기동 방법(동영상 포함) : https://gitlab.cjcho.site/lacture_human/lacture_250721/99_req
 cheatsheets.pdf · main · lacture_human / lacture_250721 / 250813 · GitLab
@@ -429,6 +430,9 @@ SQLD 문제은행 - 기출문제, 예상문제, 자격증 대비 학습, OX퀴�
 Boxplot 그래프 해석방법(이상치 탐색방법) : https://www.blog.data101.io/355
 카이제곱분포란? : https://math100.tistory.com/44
 s개 범주의 결과가 가능한 경우 : https://t1.daumcdn.net/cfile/tistory/2648794053155BEF16
+[지금 무료]혼자 공부하는 머신러닝+딥러닝 강의 | 박해선 - 인프런 : https://www.inflearn.com/course/혼자공부-머신러닝-딥러닝
+한빛+ 데브그라운드 2025 with Upstage : https://event-us.kr/FKH3nHkjmPGh/event/109414?utm_source=newsletter&utm_medium=email&utm_campaign=aakabdn8uk
+윌리엄 시일리 고셋(William Sealy Gosset): 맥주와 통계학의 만남(T-test) : https://blog.naver.com/dasahee/223626457149
 ------------------------------------------------------------------------------------------------------------------
 자유도(통계학) : https://ko.wikipedia.org/wiki/%EC%9E%90%EC%9C%A0%EB%8F%84_(%ED%86%B5%EA%B3%84%ED%95%99)
 ------------------------------------------------------------------------------------------------------------------
