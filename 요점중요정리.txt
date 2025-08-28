@@ -433,6 +433,10 @@ s개 범주의 결과가 가능한 경우 : https://t1.daumcdn.net/cfile/tistory
 [지금 무료]혼자 공부하는 머신러닝+딥러닝 강의 | 박해선 - 인프런 : https://www.inflearn.com/course/혼자공부-머신러닝-딥러닝
 한빛+ 데브그라운드 2025 with Upstage : https://event-us.kr/FKH3nHkjmPGh/event/109414?utm_source=newsletter&utm_medium=email&utm_campaign=aakabdn8uk
 윌리엄 시일리 고셋(William Sealy Gosset): 맥주와 통계학의 만남(T-test) : https://blog.naver.com/dasahee/223626457149
+scikit-learn: machine learning in Python — scikit-learn 1.7.1 documentation : https://scikit-learn.org/stable/index.html
+RPubs - 의사결정트리 구현 : https://rpubs.com/qkdrk777777/462760
+Python API Reference — xgboost 0.90 documentation : https://federated-xgboost.readthedocs.io/en/latest/python/python_api.html
+lightgbm.LGBMClassifier — LightGBM 4.6.0.99 documentation : https://lightgbm.readthedocs.io/en/latest/pythonapi/lightgbm.LGBMClassifier.html#lightgbm.LGBMClassifier
 ------------------------------------------------------------------------------------------------------------------
 자유도(통계학) : https://ko.wikipedia.org/wiki/%EC%9E%90%EC%9C%A0%EB%8F%84_(%ED%86%B5%EA%B3%84%ED%95%99)
 ------------------------------------------------------------------------------------------------------------------
@@ -488,3 +492,6 @@ model
 results
 y_pred
 ------------------------------------------------------------------------------------------------------------------
+pip install xgboost lightgbm
+Python API Reference — xgboost 0.90 documentation : https://federated-xgboost.readthedocs.io/en/latest/python/python_api.html
+lightgbm.LGBMClassifier — LightGBM 4.6.0.99 documentation : https://lightgbm.readthedocs.io/en/latest/pythonapi/lightgbm.LGBMClassifier.html#lightgbm.LGBMClassifier
