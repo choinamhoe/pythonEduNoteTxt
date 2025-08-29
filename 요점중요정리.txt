@@ -437,6 +437,12 @@ scikit-learn: machine learning in Python — scikit-learn 1.7.1 documentation : 
 RPubs - 의사결정트리 구현 : https://rpubs.com/qkdrk777777/462760
 Python API Reference — xgboost 0.90 documentation : https://federated-xgboost.readthedocs.io/en/latest/python/python_api.html
 lightgbm.LGBMClassifier — LightGBM 4.6.0.99 documentation : https://lightgbm.readthedocs.io/en/latest/pythonapi/lightgbm.LGBMClassifier.html#lightgbm.LGBMClassifier
+2025년 상반기 치열한 경쟁의 AI공모전에서 입상한 학생들 축하합니다!! > 수강후기 | 휴먼교육센터
+본 교육센터 재학생이 '국민체육진흥공단'에서 주관하는 AI공공데이터 활용 경진대회에서 '대상'(1위)수상하였습니다 > 수강후기 | 휴먼교육센터
+DACON : 인공지능 경진대회 플랫폼 데이콘 Data Science AI Competitions - DACON : https://dacon.io/
+Kaggle: Your Home for Data Science : https://www.kaggle.com/
+[머신러닝] K-평균(K-Means) 알고리즘 : https://velog.io/@jhlee508/머신러닝-K-평균K-Means-알고리즘
+RPubs - AI 와 Machine Learning을 위한 빅데이터 실습(2019.7.18(2)) ; https://rpubs.com/qkdrk777777/511938
 ------------------------------------------------------------------------------------------------------------------
 자유도(통계학) : https://ko.wikipedia.org/wiki/%EC%9E%90%EC%9C%A0%EB%8F%84_(%ED%86%B5%EA%B3%84%ED%95%99)
 ------------------------------------------------------------------------------------------------------------------
