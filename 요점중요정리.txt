@@ -444,6 +444,7 @@ Kaggle: Your Home for Data Science : https://www.kaggle.com/
 [머신러닝] K-평균(K-Means) 알고리즘 : https://velog.io/@jhlee508/머신러닝-K-평균K-Means-알고리즘
 RPubs - AI 와 Machine Learning을 위한 빅데이터 실습(2019.7.18(2)) ; https://rpubs.com/qkdrk777777/511938
 Keras 3 API documentation : https://keras.io/api/
+전이학습 모델 종류 : https://keras.io/api/applications/
 ------------------------------------------------------------------------------------------------------------------
 자유도(통계학) : https://ko.wikipedia.org/wiki/%EC%9E%90%EC%9C%A0%EB%8F%84_(%ED%86%B5%EA%B3%84%ED%95%99)
 ------------------------------------------------------------------------------------------------------------------
