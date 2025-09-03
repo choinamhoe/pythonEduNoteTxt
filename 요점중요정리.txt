@@ -30,6 +30,7 @@ git pull https://gitlab.cjcho.site/lacture_human/lacture_250721/250728
 빅데이터와 네트워크,소프트웨어 강의자료 : git clone http://gitlab.cjcho.site/lacture_human/lacture_250721/250820
 인공지능 수학통계방법론 : git clone http://gitlab.cjcho.site/lacture_human/lacture_250721/250821
 06.인공지능 구현,AI 간단설명 : git clone https://gitlab.cjcho.site/lacture_human/lacture_250721/250827
+06.인공지능 구현,AI 간단설명(OBS_ASOS_TIM) : git clone https://gitlab.cjcho.site/lacture_human/lacture_250721/250827
 
 포스트맨,프런트앤드,백앤드,코랩 기동 방법(동영상 포함) : https://gitlab.cjcho.site/lacture_human/lacture_250721/99_req
 cheatsheets.pdf · main · lacture_human / lacture_250721 / 250813 · GitLab
