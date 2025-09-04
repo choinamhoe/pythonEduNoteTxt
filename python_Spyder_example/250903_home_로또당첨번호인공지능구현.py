@@ -9,7 +9,7 @@ from tqdm import tqdm
 import time  # time 모듈 추가
 
 latest_round = 1187
-save_folder = "D:/lotto"
+save_folder = "E:/choinamhoe/lotto"
 
 def get_lotto_numbers(drwNo):
     url = f"https://www.dhlottery.co.kr/common.do?method=getLottoNumber&drwNo={drwNo}"
