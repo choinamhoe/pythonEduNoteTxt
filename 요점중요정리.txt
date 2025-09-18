@@ -73,6 +73,8 @@ nginx 관련 깃 주소 : git clone https://gitlab.cjcho.site/lacture_human/ngin
 리엑트 라운터테스트 : git clone https://github.com/choinamhoe/route_test.git
 스타벅스 로직 구현진행중 : git clone https://github.com/choinamhoe/starbucks.git
 weather_cron(크론탭같은 자동 실행방법)  : git clone https://github.com/choinamhoe/weather_cron.git
+미니프로젝트(2조,우리가한거) : git clone https://github.com/choinamhoe/humanminiproject.git
+미니프로젝트(1,2,3조 선생님이 리팩토리한거) : git clone https://github.com/choinamhoe/humanfinalminiproject.git
 
 ##########################git 관련 명령어 start
 1. git을 통해 과거로 되돌아가는 방법 3가지
