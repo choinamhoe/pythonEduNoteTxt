@@ -34,12 +34,16 @@ git pull https://gitlab.cjcho.site/lacture_human/lacture_250721/250728
 프런트앤드 -> 백앤드 -> 인공지능까지 연동 : https://gitlab.cjcho.site/lacture_human/lacture_250721/eazy_example_v1
                                              백앤드 :  git clone https://gitlab.cjcho.site/lacture_human/lacture_250721/eazy_example_v1/backend
                                         프런트앤드 :  git clone https://gitlab.cjcho.site/lacture_human/lacture_250721/eazy_example_v1/frontend
+재미나이 관련 : git clone https://gitlab.cjcho.site/lacture_human/lacture_250721/eazy_example2/backend
 포스트맨,프런트앤드,백앤드,코랩 기동 방법(동영상 포함) : https://gitlab.cjcho.site/lacture_human/lacture_250721/99_req
 cheatsheets.pdf · main · lacture_human / lacture_250721 / 250813 · GitLab
 Matplotlib 이미지 함수 api : Examples — Matplotlib 3.10.5 documentation
                                    https://matplotlib.org/stable/gallery/index.html
                                    https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.plot.html
                                    https://gitlab.cjcho.site/lacture_human/lacture_250721/250813/-/blob/main/cheatsheets.pdf?ref_type=heads
+미니프로젝트 : 1조 : https://gitlab.cjcho.site/lacture_human/lacture_250721/mini/team1
+	       2조(우리조) : https://gitlab.cjcho.site/lacture_human/lacture_250721/mini/team2
+	       3조 :https://gitlab.cjcho.site/lacture_human/lacture_250721/mini/team3
 
 <!--  프론트  -->
 git clone https://gitlab.cjcho.site/lacture_human/lacture_250721/250804 cookie_session_ex
@@ -496,6 +500,7 @@ Keras 3 API documentation : https://keras.io/api/
 https://wikidocs.net/24586#:~:text=감성 분류를 연습하기 위해 자주 사용하는 영어 데이터로,50%3A50대 비율로 분할하여 88.89%25의 정확도를 얻었다고 소개하고 있습니다.
 
 제미나이 api 키 : https://aistudio.google.com/apikey  -> api키 만들기 클릭 : AIzaSyCiFT3JyYK4ZR7wHHMLQ1KstOBtRNI2DbQ
+                                                                          조창제 강사님 : API_KEY = "AIzaSyAGTOA7hFJNx_EKLtFaGp-I_tqGFPQ4oXA"
 ------------------------------------------------------------------------------------------------------------------
 자유도(통계학) : https://ko.wikipedia.org/wiki/%EC%9E%90%EC%9C%A0%EB%8F%84_(%ED%86%B5%EA%B3%84%ED%95%99)
 ------------------------------------------------------------------------------------------------------------------
@@ -570,3 +575,10 @@ conda create -n 생성할 가상환경명 --clone 복제할 환경명
 Ctrl + Shift + P
 select interpreter.
 생성한 base_bk2로 선택
+------------------------------------------------------------------------------------------------------------------
+미니 프로젝트 : 지역별 최근 5년간 강수량과 기온 변화 자료 조회 및 예측 분석
+기상청 기상자료개발포털 : https://data.kma.go.kr/cmmn/main.do
+                                 cnh665@naver.com//cnhmook176!
+                                 로그인 후 관측>>메타데이터>>지도로선택>>지상>>종관기상관측>>전체선택후 조회>>csv버튼 클릭
+구글 스프레드시트를 활용한 주소 -> 좌표계로 변환
+https://velog.io/@syh0397/%EA%B5%AC%EA%B8%80-%EC%8A%A4%ED%94%84%EB%A0%88%EB%93%9C-%EC%8B%9C%ED%8A%B8%EC%97%90%EC%84%9C-%EC%A7%80%EC%98%A4%EC%BD%94%EB%94%A9%EC%A3%BC%EC%86%8C-%EC%A2%8C%ED%91%9C-%EB%B3%80%ED%99%98%ED%95%98%EA%B8%B0
