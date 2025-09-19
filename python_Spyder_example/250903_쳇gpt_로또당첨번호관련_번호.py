@@ -10,13 +10,35 @@ import requests
 import pandas as pd
 import random
 import matplotlib.pyplot as plt
+import datetime
 %matplotlib auto
 
 # ==========================
-# 1. 로또 당첨번호 크롤링
+# 1.다가올 토요일 일자 구하기
 # ==========================
-number = 1187
-base_folder = "E:/choinamhoe/lotto"
+# 1. 오늘 날짜 가져오기
+today = datetime.date.today()
+# 예시 날짜로 테스트하려면 아래 주석을 해제하세요.
+# today = datetime.date(2025, 9, 8)
+
+# 2. 오늘 요일 계산 (월요일=0, 화요일=1, ..., 토요일=5, 일요일=6)
+#    다가오는 토요일(5)까지 남은 날짜 계산
+days_until_saturday = (5 - today.weekday() + 7) % 7
+
+# 3. 오늘 날짜에 남은 날짜를 더해 다음 토요일 날짜 계산
+upcoming_saturday = today + datetime.timedelta(days=days_until_saturday)
+
+# 4. 'YYYY.MM.DD' 형식으로 날짜 포맷 변경
+formatted_date = upcoming_saturday.strftime('%Y.%m.%d')
+
+# 결과 출력
+#print(formatted_date)
+# ==========================
+# 2. 로또 당첨번호 크롤링
+# ==========================
+
+number = 1188
+base_folder = f"E:/choinamhoe/lotto/{number}회(당첨일-{formatted_date})"
 # 폴더가 없다면 자동 생성
 os.makedirs(base_folder, exist_ok=True)
 
@@ -49,7 +71,7 @@ def crawl_lotto(max_round=number):
     return df
 
 # ==========================
-# 2. 데이터 분석
+# 3. 데이터 분석
 # ==========================
 def analyze_lotto(df, recent_n=None):
     """전체 or 최근 n회 로또 데이터 분석"""
@@ -62,7 +84,7 @@ def analyze_lotto(df, recent_n=None):
     return freq
 
 # ==========================
-# 3. 확장된 추천번호 생성
+# 4. 확장된 추천번호 생성
 # ==========================
 def recommend_numbers(freq, n=6):
     prob = freq / freq.sum()
@@ -90,7 +112,7 @@ def recommend_numbers(freq, n=6):
         return nums
 
 # ==========================
-# 4. 실행
+# 5. 실행
 # ==========================
 if __name__ == "__main__":
     print("📌 로또 데이터 수집중...")

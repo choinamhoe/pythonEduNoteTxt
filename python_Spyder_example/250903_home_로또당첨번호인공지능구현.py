@@ -6,10 +6,34 @@ from sklearn.ensemble import RandomForestRegressor
 from collections import Counter
 import numpy as np
 from tqdm import tqdm
+import datetime
 import time  # time 모듈 추가
 
-latest_round = 1187
-save_folder = "E:/choinamhoe/lotto"
+# ==========================
+# 1.다가올 토요일 일자 구하기
+# ==========================
+# 1. 오늘 날짜 가져오기
+today = datetime.date.today()
+# 예시 날짜로 테스트하려면 아래 주석을 해제하세요.
+# today = datetime.date(2025, 9, 8)
+
+# 2. 오늘 요일 계산 (월요일=0, 화요일=1, ..., 토요일=5, 일요일=6)
+#    다가오는 토요일(5)까지 남은 날짜 계산
+days_until_saturday = (5 - today.weekday() + 7) % 7
+
+# 3. 오늘 날짜에 남은 날짜를 더해 다음 토요일 날짜 계산
+upcoming_saturday = today + datetime.timedelta(days=days_until_saturday)
+
+# 4. 'YYYY.MM.DD' 형식으로 날짜 포맷 변경
+formatted_date = upcoming_saturday.strftime('%Y.%m.%d')
+
+# 결과 출력
+#print(formatted_date)
+
+latest_round = 1189
+save_folder = f"E:/choinamhoe/lotto/{latest_round}회(당첨일-{formatted_date})"
+# 폴더가 없다면 자동 생성
+os.makedirs(save_folder, exist_ok=True)
 
 def get_lotto_numbers(drwNo):
     url = f"https://www.dhlottery.co.kr/common.do?method=getLottoNumber&drwNo={drwNo}"
