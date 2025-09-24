@@ -507,6 +507,7 @@ https://wikidocs.net/24586#:~:text=감성 분류를 연습하기 위해 자주 �
 [baseline2] LightGBM을 활용한 개별 모델링(Public: 0.22959) - DACON : https://dacon.io/competitions/official/235801/codeshare/3349?page=1&dtype=recent
 2021 농산물 가격예측 AI 경진대회 - DACON : https://dacon.io/competitions/official/235801/overview/rules
 주식프로그램 참고 : https://blog.naver.com/precioustr/223295379346
+9월24일 데이터 경로(데이콘 Basic 고객 지원 등급 분류 : 도움이 필요한 고객을 찾아라! - DACON) : https://dacon.io/competitions/official/236562/overview/description
 ------------------------------------------------------------------------------------------------------------------
 자유도(통계학) : https://ko.wikipedia.org/wiki/%EC%9E%90%EC%9C%A0%EB%8F%84_(%ED%86%B5%EA%B3%84%ED%95%99)
 ------------------------------------------------------------------------------------------------------------------
