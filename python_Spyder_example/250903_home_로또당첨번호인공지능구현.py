@@ -30,7 +30,7 @@ formatted_date = upcoming_saturday.strftime('%Y.%m.%d')
 # 결과 출력
 #print(formatted_date)
 
-latest_round = 1190
+latest_round = 1191
 save_folder = f"E:/choinamhoe/lotto/{latest_round}회(당첨일-{formatted_date})"
 # 폴더가 없다면 자동 생성
 os.makedirs(save_folder, exist_ok=True)
