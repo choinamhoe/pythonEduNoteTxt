@@ -48,6 +48,7 @@ Explore projects · GitLab : https://gitlab.cjcho.site/explore
 ocr인식 : git clone https://gitlab.cjcho.site/lacture_human/lacture_250721/dump/paddleocr
 CVAT : git clone http://gitlab.cjcho.site/lacture_human/lacture_250721/dump/cvat.git
 mediapipe : git clone http://gitlab.cjcho.site/lacture_human/lacture_250721/dump/mediapipe.git
+250929_Bok_choy : git clone https://gitlab.cjcho.site/lacture_human/lacture_250721/dacon/bok_choy
 
 <!--  프론트  -->
 git clone https://gitlab.cjcho.site/lacture_human/lacture_250721/250804 cookie_session_ex
@@ -527,6 +528,8 @@ PFCCLab/PPOCRLabel: PPOCRLabelv2 is a semi-automatic graphic annotation tool sui
 [딥러닝] 데이터 증강(Data Augmentation) 기법 정리 : https://velog.io/@gyurili/딥러닝-데이터-증강Data-Augmentation-기법-정리
 나타디오카 : https://natadioka1023.tistory.com/111
 [CV] 3차원 색상 표현 방법 HSV, HSL, HSB 해설, 정리, 요약 : https://hyunhp.tistory.com/682
+청경체(zip) : http://ducj.iptime.org:5000/sharing/D25wQpZbu 
+생육 환경 최적화 경진대회 : https://dacon.io/competitions/official/235897/data
 ------------------------------------------------------------------------------------------------------------------
 자유도(통계학) : https://ko.wikipedia.org/wiki/%EC%9E%90%EC%9C%A0%EB%8F%84_(%ED%86%B5%EA%B3%84%ED%95%99)
 ------------------------------------------------------------------------------------------------------------------
