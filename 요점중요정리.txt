@@ -50,7 +50,7 @@ CVAT : git clone http://gitlab.cjcho.site/lacture_human/lacture_250721/dump/cvat
 mediapipe : git clone http://gitlab.cjcho.site/lacture_human/lacture_250721/dump/mediapipe.git
 250929_Bok_choy : git clone https://gitlab.cjcho.site/lacture_human/lacture_250721/dacon/bok_choy
 250930_컴퓨터버전 : git clone https://gitlab.cjcho.site/lacture_human/lacture_250721/250930
-tensorflow : https://gitlab.cjcho.site/lacture_human/eazy_example_dl/tensorflow
+tensorflow : git clone https://gitlab.cjcho.site/lacture_human/eazy_example_dl/tensorflow
 
 <!--  프론트  -->
 git clone https://gitlab.cjcho.site/lacture_human/lacture_250721/250804 cookie_session_ex
