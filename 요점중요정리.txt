@@ -50,6 +50,7 @@ CVAT : git clone http://gitlab.cjcho.site/lacture_human/lacture_250721/dump/cvat
 mediapipe : git clone http://gitlab.cjcho.site/lacture_human/lacture_250721/dump/mediapipe.git
 250929_Bok_choy : git clone https://gitlab.cjcho.site/lacture_human/lacture_250721/dacon/bok_choy
 250930_컴퓨터버전 : git clone https://gitlab.cjcho.site/lacture_human/lacture_250721/250930
+tensorflow : https://gitlab.cjcho.site/lacture_human/eazy_example_dl/tensorflow
 
 <!--  프론트  -->
 git clone https://gitlab.cjcho.site/lacture_human/lacture_250721/250804 cookie_session_ex
@@ -532,6 +533,7 @@ PFCCLab/PPOCRLabel: PPOCRLabelv2 is a semi-automatic graphic annotation tool sui
 청경체(zip) : http://ducj.iptime.org:5000/sharing/D25wQpZbu 
 생육 환경 최적화 경진대회 : https://dacon.io/competitions/official/235897/data
 개와고양이 : http://ducj.iptime.org:5000/sharing/47N1vSXnP
+인류가 이해한 AI는 여기까지 입니다 | 알렉스넷 - YouTube : https://www.youtube.com/watch?v=33swNPZAJ1o&t=20s
 ------------------------------------------------------------------------------------------------------------------
 자유도(통계학) : https://ko.wikipedia.org/wiki/%EC%9E%90%EC%9C%A0%EB%8F%84_(%ED%86%B5%EA%B3%84%ED%95%99)
 ------------------------------------------------------------------------------------------------------------------
