@@ -30,7 +30,7 @@ formatted_date = upcoming_saturday.strftime('%Y.%m.%d')
 # 결과 출력
 #print(formatted_date)
 
-latest_round = 1191
+latest_round = 1195
 save_folder = f"E:/choinamhoe/lotto/{latest_round}회(당첨일-{formatted_date})"
 # 폴더가 없다면 자동 생성
 os.makedirs(save_folder, exist_ok=True)
@@ -42,6 +42,8 @@ def get_lotto_numbers(drwNo):
         return None
     nums = [res[f"drwtNo{i}"] for i in range(1, 7)]
     bonus = res["bnusNo"]
+    firstWinamnt = res["firstWinamnt"]
+    firstPrzwnerCo = res["firstPrzwnerCo"]
     return {
         "회차": drwNo,
         "번호1": nums[0],
@@ -51,6 +53,8 @@ def get_lotto_numbers(drwNo):
         "번호5": nums[4],
         "번호6": nums[5],
         "보너스": bonus,
+        "1등당첨복권수": firstPrzwnerCo,
+        "1등1개당첨금": firstWinamnt,
     }
 
 def crawl_lotto(max_round=latest_round):
