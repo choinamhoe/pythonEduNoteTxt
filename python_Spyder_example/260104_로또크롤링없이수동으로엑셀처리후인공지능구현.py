@@ -8,14 +8,14 @@ import datetime
 # =========================
 # 0. 기본 설정
 # =========================
-LATEST_ROUND = 1206
+LATEST_ROUND = 1209
 
 today = datetime.date.today()
 days_until_saturday = (5 - today.weekday() + 7) % 7
 upcoming_saturday = today + datetime.timedelta(days=days_until_saturday)
 formatted_date = upcoming_saturday.strftime('%Y.%m.%d')
 
-BASE_DIR = rf"D:\lotto\{LATEST_ROUND}회(당첨일-{formatted_date})"
+BASE_DIR = rf"D:\github\pythonEduNoteTxt\lotto\{LATEST_ROUND}회(당첨일-{formatted_date})"
 CSV_PATH = os.path.join(BASE_DIR, "lotto_history.csv")
 
 os.makedirs(BASE_DIR, exist_ok=True)
