@@ -8,7 +8,7 @@ import datetime
 # =========================
 # 0. 기본 설정
 # =========================
-LATEST_ROUND = 1209
+LATEST_ROUND = 1212
 
 today = datetime.date.today()
 days_until_saturday = (5 - today.weekday() + 7) % 7
