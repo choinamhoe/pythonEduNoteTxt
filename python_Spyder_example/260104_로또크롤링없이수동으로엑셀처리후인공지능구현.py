@@ -8,7 +8,9 @@ import datetime
 # =========================
 # 0. 기본 설정
 # =========================
-LATEST_ROUND = 1224
+LATEST_ROUND = 1225
+ml_cnt = 2
+stat_cnt = 3
 
 today = datetime.date.today()
 days_until_saturday = (5 - today.weekday() + 7) % 7
@@ -38,7 +40,7 @@ def load_lotto_data():
 # =========================
 # 2. 머신러닝 기반 예측
 # =========================
-def predict_lotto_ml(df, n_predictions=3):
+def predict_lotto_ml(df, n_predictions=ml_cnt):
     X = df[['회차']].values
     y = df[[f'번호{i}' for i in range(1, 7)]].values
 
@@ -72,7 +74,7 @@ def predict_lotto_ml(df, n_predictions=3):
 # =========================
 # 3. 통계 기반 예측
 # =========================
-def predict_lotto_stat(df, n_predictions=2):
+def predict_lotto_stat(df, n_predictions=stat_cnt):
     nums = df[[f'번호{i}' for i in range(1, 7)]].values.flatten()
     common = [n for n, _ in Counter(nums).most_common(20)]
 
@@ -108,8 +110,8 @@ def main():
     df = load_lotto_data()
 
     # 전체 데이터
-    all_ml = predict_lotto_ml(df, 3)
-    all_stat = predict_lotto_stat(df, 2)
+    all_ml = predict_lotto_ml(df, ml_cnt)
+    all_stat = predict_lotto_stat(df, stat_cnt)
     all_preds = all_ml + all_stat
 
     save_result(
@@ -120,8 +122,8 @@ def main():
 
     # 최근 50회
     recent_df = df.tail(50).reset_index(drop=True)
-    recent_ml = predict_lotto_ml(recent_df, 3)
-    recent_stat = predict_lotto_stat(recent_df, 2)
+    recent_ml = predict_lotto_ml(recent_df, ml_cnt)
+    recent_stat = predict_lotto_stat(recent_df, stat_cnt)
     recent_preds = recent_ml + recent_stat
 
     save_result(
