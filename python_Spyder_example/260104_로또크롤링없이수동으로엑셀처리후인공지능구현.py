@@ -8,7 +8,7 @@ import datetime
 # =========================
 # 0. 기본 설정
 # =========================
-LATEST_ROUND = 1225
+LATEST_ROUND = 1226
 ml_cnt = 2
 stat_cnt = 3
 
